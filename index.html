@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <h2 class="text__rus">Камень / Ножницы / Бумага</h2>
+          <img src="./img/rock_paper_scissors__2x 1.jpg" alt="" />
+          <h2 class="text__eng">Rock / Scsissors / Paper</h2>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div id="start-page" class="main__content--start-page active">
+          <h3 class="game__desc">
+            You have 3 options to choose from. Computer takes a random one.
+          </h3>
+          <p class="game__desc-lower">
+            You will have only 3 seconds in each round.
+          </p>
+          <div id="start-game" class="game__start">
+            Ready? Click me to start!
+          </div>
+          <div class="game__images">
+            <div class="game-image-cont">
+              <p class="game-image-name">Rock</p>
+              <img
+                class="game-image game-image--rock"
+                src="./img/rock.png"
+                alt=""
+              />
+            </div>
+            <div class="game-image-cont">
+              <p class="game-image-name">Scissors</p>
+              <img
+                class="game-image game-image--scissors"
+                src="./img/scissors.png"
+                alt=""
+              />
+            </div>
+            <div class="game-image-cont">
+              <p class="game-image-name">Paper</p>
+              <img
+                class="game-image game-image--paper"
+                src="./img/paper.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="game-page" class="main__contant--game-page">
+          <div id="counter" class="game__counter">
+            3
+          </div>
+          <div class="game__variants">
+            <div class="game__variant game__variants--you">
+              <p id="user-counter" class="variant--text">You</p>
+              <div class="images__wrap">
+                <img
+                  src="./img/paper.png"
+                  alt=""
+                  id="possible-choice"
+                  class="game__variant-image game__variant-image-you game__variant-image--paper"
+                />
+                <img
+                  src="./img/rock.png"
+                  alt=""
+                  id="possible-choice"
+                  class="game__variant-image game__variant-image-you game__variant-image--rock"
+                />
+                <img
+                  src="./img/scissors2.png"
+                  alt=""
+                  id="possible-choice"
+                  class="game__variant-image game__variant-image-you game__variant-image--scissors"
+                />
+                <img
+                  id="animation"
+                  src="./img/rock.png"
+                  alt=""
+                  class="game-await wait-animation"
+                />
+              </div>
+            </div>
+            <div class="game__variant game__variants--computer">
+              <p id="computer-counter" class="variant--text">Computer</p>
+              <div class="images__wrap">
+                <img
+                  src="./img/paper-flipped.png"
+                  alt=""
+                  class="game__variant-image game__variant-image--computer game__variant-image--paper-computer"
+                />
+                <img
+                  src="./img/rock-flipped.png"
+                  alt=""
+                  class="game__variant-image game__variant-image--computer  game__variant-image--rock-computer"
+                />
+                <img
+                  src="./img/scissors-flipped.png"
+                  alt=""
+                  class="game__variant-image game__variant-image--computer game__variant-image--scissors-computer"
+                />
+                <img
+                  id="animation"
+                  src="./img/rock-flipped.png"
+                  alt=""
+                  class="game-await game-await--computer wait-animation"
+                />
+              </div>
+            </div>
+          </div>
+          <div id="result" class="result"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <h4 class="credits">
+        <a
+          href="https://www.instagram.com/s.v.development/"
+          class="credits-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Created by V.Shynder / @s.v.development</a
+        >
+      </h4>
+    </footer>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>

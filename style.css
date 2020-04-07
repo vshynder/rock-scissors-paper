@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+}
+
+.header {
+  background-color: #ffea00;
+}
+
+.container {
+  width: 900px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+  height: 5vh;
+}
+
+.text__rus,
+.text__eng {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.main__content--start-page {
+  text-align: center;
+  padding-top: 55px;
+  height: 90vh;
+  display: none;
+}
+
+.game__desc {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.game__desc-lower {
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.game__start {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 70px;
+  display: inline-block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.game__start:hover {
+  transform: scale(1.2);
+}
+
+.game__images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-image {
+  height: 250px;
+  transition: 0.3s;
+}
+.game-image:hover {
+  transform: scale(1.2) rotate(-15deg);
+}
+.game-image--rock,
+.game-image--paper {
+  height: 150px;
+  margin-top: 55px;
+}
+.game-image-name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.footer {
+  text-align: center;
+  min-height: 50px;
+  height: 5vh;
+  background-color: #ffea00;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.credits-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 50px;
+  color: #000;
+}
+
+/* Game Page styles */
+
+.main__contant--game-page {
+  display: none;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.game__counter {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 88px;
+  margin-bottom: 40px;
+}
+
+.game__variant-image {
+  height: 100px;
+}
+
+.game__variants {
+  display: flex;
+  justify-content: space-between;
+}
+
+.game__variant {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 305px;
+}
+
+.variant--text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+}
+
+.images__wrap {
+  position: relative;
+  width: 214px;
+  height: 245px;
+}
+
+.game__variant-image {
+  height: 81px;
+  position: absolute;
+}
+.game__variant-image--paper {
+  bottom: 0;
+  left: 0;
+}
+.game__variant-image--scissors {
+  top: 0;
+  left: 0;
+}
+.game__variant-image--rock {
+  right: 0;
+  top: 35%;
+}
+
+.game__variant-image--computer {
+  transition: 0.4s;
+}
+.game__variant-image--paper-computer {
+  right: 0;
+  bottom: 0;
+}
+.game__variant-image--scissors-computer {
+  right: 0;
+  top: 0;
+}
+.game__variant-image--rock-computer {
+  left: 0;
+  top: 35%;
+  height: 74px;
+}
+
+.game__variant-image-you {
+  transition: 0.4s;
+}
+
+.game__variant-image-you:hover {
+  transform: scale(1.4);
+}
+
+.result {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+}
+
+.wait-animation {
+  animation: rockAnimation 1s alternate infinite;
+}
+
+.game-await {
+  height: 95px;
+  position: absolute;
+  top: 35%;
+  right: -150px;
+}
+.game-await--computer {
+  left: -150px;
+  height: 85px;
+}
+
+.active {
+  display: block;
+}
+
+@keyframes rockAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
