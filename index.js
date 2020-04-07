@@ -106,7 +106,11 @@ function showResults() {
 }
 function checkForChoice(choices) {
   if (!userChoice) {
-    return choices[Number.parseInt(Math.random() * 2.999)];
+    const choice = choices[Number.parseInt(Math.random() * 2.999)];
+    document.getElementsByClassName(
+      `game__variant-image--${choice}`
+    )[0].style.transform = "scale(1.6)";
+    return choice;
   } else {
     return userChoice;
   }
