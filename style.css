@@ -4,7 +4,8 @@
   font-family: "Montserrat";
 }
 
-body {}
+body {
+}
 
 .header {
   background-color: #ffea00;
@@ -21,7 +22,7 @@ body {}
   justify-content: space-between;
   align-items: center;
   min-height: 50px;
-  height: 5vh;
+  padding: 10px 0;
 }
 
 .text__rus,
@@ -132,6 +133,7 @@ body {}
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 50px;
+  margin: 0 auto;
 }
 
 .main__contant--game-page {
@@ -139,6 +141,7 @@ body {}
   text-align: center;
   padding-top: 20px;
   height: 90vh;
+  padding-bottom: 50px;
 }
 
 .game__counter {
@@ -226,7 +229,7 @@ body {}
 }
 
 .result {
-  height: 45px;
+  min-height: 45px;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -263,5 +266,130 @@ body {}
 
   100% {
     transform: rotate(15deg);
+  }
+}
+
+@media (max-height: 860px) {
+  .images__wrap {
+    height: 150px;
+    width: 100%;
+  }
+  .game__variant {
+    height: 200px;
+    width: 120px;
+  }
+  .game__variant-image {
+    height: 62px;
+  }
+  .game__variant-image--rock-computer {
+    height: 54px;
+  }
+}
+
+@media (max-height: 720px) {
+  .images__wrap {
+    height: 100px;
+  }
+  .game__variant {
+    height: 150px;
+  }
+  .game__variant-image {
+    height: 42px;
+  }
+  .game__variant-image--rock-computer {
+    height: 34px;
+  }
+  .game-await {
+    top: -150px;
+  }
+}
+
+@media (max-width: 920px) {
+  .container {
+    width: 700px;
+  }
+  .game-await {
+    top: -150px;
+    right: 30px;
+  }
+  .game-await--computer {
+    left: 30px;
+  }
+  .wrapper {
+    width: 550px;
+  }
+}
+
+@media (max-width: 710px) {
+  .container {
+    width: 500px;
+  }
+  .header__content {
+    flex-direction: column;
+  }
+  .game__variant {
+    height: 210px;
+  }
+  .images__wrap {
+    width: 150px;
+    height: 170px;
+  }
+  .game__variant-image {
+    height: 62px;
+  }
+  .game__variant-image--rock-computer {
+    height: 54px;
+  }
+}
+
+@media (max-width: 510px) {
+  .container {
+    width: 340px;
+  }
+  .game__counter {
+    font-size: 46px;
+  }
+  .variant--text {
+    font-size: 22px;
+  }
+  .result {
+    font-size: 22px;
+  }
+  .game__variant-image {
+    height: 50px;
+  }
+  .game__variant-image--rock-computer {
+    height: 42px;
+  }
+  .images__wrap {
+    width: 100px;
+  }
+}
+@media (max-width: 330px) {
+  .container {
+    width: 310px;
+  }
+  .text__rus,
+  .text__eng {
+    font-size: 14px;
+  }
+  .game__counter {
+    font-size: 36px;
+  }
+  .game__variant {
+    height: 110px;
+  }
+  .game-await {
+    top: -110px;
+    height: 72px;
+  }
+  .game-await--computer {
+    height: 64px;
+  }
+  .game__variant-image {
+    height: 36px;
+  }
+  .game__variant-image--rock-computer {
+    height: 33px;
   }
 }
