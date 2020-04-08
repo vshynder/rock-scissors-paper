@@ -5,6 +5,7 @@
 }
 
 body {
+  overflow: hidden;
 }
 
 .header {
@@ -269,23 +270,6 @@ body {
   }
 }
 
-@media (max-height: 860px) {
-  .images__wrap {
-    height: 150px;
-    width: 100%;
-  }
-  .game__variant {
-    height: 200px;
-    width: 120px;
-  }
-  .game__variant-image {
-    height: 62px;
-  }
-  .game__variant-image--rock-computer {
-    height: 54px;
-  }
-}
-
 @media (max-height: 720px) {
   .images__wrap {
     height: 100px;
@@ -317,6 +301,22 @@ body {
   }
   .wrapper {
     width: 550px;
+  }
+  .game__images {
+    padding-bottom: 100px;
+  }
+  .game-image {
+    height: 60px;
+  }
+  .game-image-name {
+    font-size: 18px;
+  }
+  .game-image--rock,
+  .game-image--paper {
+    margin-top: 10px;
+  }
+  .game-image--scissors {
+    height: 80px;
   }
 }
 
